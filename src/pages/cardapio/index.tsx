@@ -9,6 +9,7 @@ import Ordenador from './filtros/Ordernador';
 function Cardapio() {
     const [busca, setBusca] = useState("");
     const [filtro, setFiltro] = useState<number | null>(null);
+    const [ordenador, setOrdenador] = useState("");
 
     return (
         <main>
@@ -26,7 +27,7 @@ function Cardapio() {
 
                 <div className={style.cardapio__filtros}>
                     <Filtros filtro={filtro} setFiltro={setFiltro} />
-                    <Ordenador />
+                    <Ordenador ordenador={ordenador} setOrdenador={setOrdenador} />
                 </div>
             </section>
         </main>
