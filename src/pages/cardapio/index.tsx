@@ -30,7 +30,7 @@ function Cardapio() {
                     <Filtros filtro={filtro} setFiltro={setFiltro} />
                     <Ordenador ordenador={ordenador} setOrdenador={setOrdenador} />
                 </div>
-                <Items />
+                <Items busca={busca} filtro={filtro} ordenador={ordenador} />
             </section>
         </main>
     )
